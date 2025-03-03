@@ -27,7 +27,7 @@ const ContactSection: React.FC = () => {
             <div className="space-y-6">
               <div>
                 <h4 className="text-sm uppercase tracking-wider text-portfolio-gray-medium mb-3">Email</h4>
-                <EmailButton email="adebayo@example.com" />
+                <EmailButton email="asalamadebayo@gmail.com" />
               </div>
               
               <div>
