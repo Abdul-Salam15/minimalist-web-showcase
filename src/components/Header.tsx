@@ -23,14 +23,14 @@ const Header: React.FC = () => {
     <header 
       className={cn(
         "fixed top-0 left-0 right-0 py-6 px-8 z-50 transition-all duration-300 ease-in-out backdrop-blur-sm",
-        isScrolled ? "bg-white/80 shadow-sm py-4" : "bg-transparent"
+        isScrolled ? "bg-portfolio-dark-bg/90 border-b border-portfolio-neon-border/20 py-4" : "bg-transparent"
       )}
     >
       <div className="container mx-auto">
         <nav className="flex justify-between items-center">
           <a 
             href="#"
-            className="text-xl font-medium text-portfolio-gray-dark hover:text-portfolio-blue-medium transition-colors duration-300"
+            className="text-xl font-medium text-white hover:text-portfolio-accent transition-colors duration-300"
           >
             AA
           </a>
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <li>
               <button 
                 onClick={() => scrollTo('projects', { offset: 100 })} 
-                className="nav-link"
+                className="nav-link text-portfolio-gray-dark"
               >
                 Projects
               </button>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
             <li>
               <button 
                 onClick={() => scrollTo('contact', { offset: 100 })} 
-                className="nav-link"
+                className="nav-link text-portfolio-gray-dark"
               >
                 Contact
               </button>
@@ -59,13 +59,13 @@ const Header: React.FC = () => {
             <div className="space-x-6">
               <button 
                 onClick={() => scrollTo('projects', { offset: 80 })} 
-                className="nav-link"
+                className="nav-link text-portfolio-gray-dark"
               >
                 Projects
               </button>
               <button 
                 onClick={() => scrollTo('contact', { offset: 80 })} 
-                className="nav-link"
+                className="nav-link text-portfolio-gray-dark"
               >
                 Contact
               </button>

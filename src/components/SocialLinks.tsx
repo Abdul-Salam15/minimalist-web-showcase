@@ -39,7 +39,7 @@ const SocialLinks: React.FC = () => {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-portfolio-gray-dark border border-portfolio-gray-light hover:border-portfolio-accent hover:text-portfolio-accent transition-all duration-300"
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-portfolio-card-bg text-portfolio-gray-dark border border-portfolio-neon-border/30 hover:border-portfolio-accent hover:text-portfolio-accent transition-all duration-300 hover:neon-glow"
           aria-label={`Visit ${link.name}`}
         >
           {link.icon}

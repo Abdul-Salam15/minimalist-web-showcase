@@ -46,9 +46,14 @@ const projectsData = [
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section id="projects" className="bg-portfolio-gray-light py-24 px-6">
-      <div className="container mx-auto">
-        <h2 className="section-title">Featured Projects</h2>
+    <section id="projects" className="bg-portfolio-card-bg py-24 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 right-20 w-60 h-60 rounded-full bg-portfolio-blue-light blur-[100px]"></div>
+        <div className="absolute bottom-40 left-20 w-70 h-70 rounded-full bg-portfolio-blue-dark blur-[120px]"></div>
+      </div>
+      
+      <div className="container mx-auto relative z-10">
+        <h2 className="section-title text-white">Featured Projects</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {projectsData.map((project) => (

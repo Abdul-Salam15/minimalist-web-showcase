@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,15 +62,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom portfolio colors
+				// Custom portfolio colors for neon theme
 				portfolio: {
-					accent: '#2ECC71',
-					'blue-light': '#E8F1F8',
-					'blue-medium': '#4A90E2',
-					'blue-dark': '#2A5298',
-					'gray-light': '#F6F6F7',
-					'gray-medium': '#8E9196',
-					'gray-dark': '#333333',
+					accent: '#33F3A1',            // Neon green
+					'blue-light': '#33C3F0',      // Neon blue
+					'blue-medium': '#8B5CF6',     // Neon purple
+					'blue-dark': '#D946EF',       // Neon pink
+					'gray-light': '#333333',      // Dark gray  
+					'gray-medium': '#999999',     // Medium gray
+					'gray-dark': '#EEEEEE',       // Light gray (for text)
+					'neon-orange': '#F97316',     // Neon orange
+					'neon-border': '#0EA5E9',     // Neon border color
+					'dark-bg': '#000000e6',       // Almost black background
+					'card-bg': '#0006'            // Transparent dark for cards
 				}
 			},
 			borderRadius: {

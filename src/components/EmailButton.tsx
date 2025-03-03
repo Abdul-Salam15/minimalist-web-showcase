@@ -25,7 +25,7 @@ const EmailButton: React.FC<EmailButtonProps> = ({ email }) => {
   return (
     <button
       onClick={handleCopyEmail}
-      className="flex items-center space-x-2 py-2 px-4 rounded-lg bg-white border border-portfolio-gray-light hover:border-portfolio-accent transition-all duration-300 group"
+      className="flex items-center space-x-2 py-2 px-4 rounded-lg bg-portfolio-card-bg border border-portfolio-neon-border/30 hover:border-portfolio-accent/70 transition-all duration-300 group neon-glow"
       aria-label="Copy email address"
     >
       <Mail size={18} className="text-portfolio-gray-medium group-hover:text-portfolio-accent transition-colors duration-300" />
