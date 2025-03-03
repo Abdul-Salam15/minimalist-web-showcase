@@ -1,11 +1,9 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 
 const Index = () => {
-  // Add animation classes to elements as they come into view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -72,7 +70,13 @@ const Index = () => {
             
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative w-60 h-60 md:w-80 md:h-80 animate-scale-in">
-                <div className="absolute inset-0 rounded-full bg-portfolio-blue-medium/20 neon-glow-blue"></div>
+                <div className="absolute inset-0 rounded-full bg-portfolio-blue-medium/20 neon-glow-blue overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=500&fit=crop&crop=faces&q=80" 
+                    alt="Adebayo Abdul-Salam"
+                    className="w-full h-full object-cover rounded-full opacity-90 mix-blend-luminosity"
+                  />
+                </div>
                 <div className="absolute right-0 bottom-0 w-24 h-24 rounded-full bg-portfolio-accent opacity-40 blur-xl"></div>
                 <div className="absolute left-0 top-0 w-32 h-32 rounded-full bg-portfolio-blue-medium opacity-20 blur-xl"></div>
               </div>
