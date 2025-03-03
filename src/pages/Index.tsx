@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -72,7 +73,7 @@ const Index = () => {
               <div className="relative w-60 h-60 md:w-80 md:h-80 animate-scale-in">
                 <div className="absolute inset-0 rounded-full bg-portfolio-blue-medium/20 neon-glow-blue overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=500&fit=crop&crop=faces&q=80" 
+                    src="/lovable-uploads/66d67004-7453-420e-a4b6-d03de40b2591.png" 
                     alt="Adebayo Abdul-Salam"
                     className="w-full h-full object-cover rounded-full opacity-90 mix-blend-luminosity"
                   />
