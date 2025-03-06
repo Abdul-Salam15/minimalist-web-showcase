@@ -19,7 +19,7 @@ const socialLinks: SocialLink[] = [
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/adebayo-abdul-salam',
+    url: 'https://www.linkedin.com/in/abdul-salam-adebayo',
     icon: <Linkedin size={20} />
   },
   {
