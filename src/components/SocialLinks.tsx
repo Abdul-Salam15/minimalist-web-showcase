@@ -25,7 +25,7 @@ const socialLinks: SocialLink[] = [
   {
     id: 'twitter',
     name: 'Twitter',
-    url: 'https://twitter.com/adebayo_salam',
+    url: 'https://twitter.com/salamtweets_',
     icon: <Twitter size={20} />
   }
 ];
