@@ -8,8 +8,8 @@ const projectsData = [
     title: 'Employee Attrition Prediction',
     description: 'A machine learning model using logistic regression to predict employee attrition, helping organizations identify risk factors and implement retention strategies.',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-    demoLink: '#',
-    codeLink: '#',
+    demoLink: 'https://employee-attrition-prediction.hashnode.dev/predict-employee-attrition-using-python-and-logistic-regression',
+    codeLink: 'https://employee-attrition-prediction.hashnode.dev/predict-employee-attrition-using-python-and-logistic-regression',
     techStack: [
       { name: 'Python' },
       { name: 'Jupyter Notebook' },
