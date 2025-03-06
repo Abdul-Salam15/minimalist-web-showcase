@@ -5,41 +5,17 @@ import ProjectCard from './ProjectCard';
 const projectsData = [
   {
     id: 1,
-    title: 'AI Chatbot Platform',
-    description: 'An intelligent chatbot platform powered by natural language processing and machine learning for seamless customer interactions.',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
+    title: 'Employee Attrition Prediction',
+    description: 'A machine learning model using logistic regression to predict employee attrition, helping organizations identify risk factors and implement retention strategies.',
+    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
     demoLink: '#',
     codeLink: '#',
     techStack: [
       { name: 'Python' },
-      { name: 'TensorFlow' },
-      { name: 'React' }
-    ]
-  },
-  {
-    id: 2,
-    title: 'E-commerce Application',
-    description: 'A fully responsive e-commerce platform with product browsing, cart functionality, and secure checkout process.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
-    demoLink: '#',
-    codeLink: '#',
-    techStack: [
-      { name: 'React' },
-      { name: 'Node.js' },
-      { name: 'MongoDB' }
-    ]
-  },
-  {
-    id: 3,
-    title: 'Portfolio Analytics Dashboard',
-    description: 'A comprehensive analytics dashboard for visualizing portfolio performance with interactive charts and real-time data.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-    demoLink: '#',
-    codeLink: '#',
-    techStack: [
-      { name: 'TypeScript' },
-      { name: 'D3.js' },
-      { name: 'Express' }
+      { name: 'Jupyter Notebook' },
+      { name: 'Pandas' },
+      { name: 'Scikit-learn' },
+      { name: 'Matplotlib' }
     ]
   }
 ];
@@ -55,7 +31,7 @@ const ProjectsSection: React.FC = () => {
       <div className="container mx-auto relative z-10">
         <h2 className="section-title text-white">Featured Projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="flex justify-center mt-16">
           {projectsData.map((project) => (
             <ProjectCard
               key={project.id}
