@@ -50,7 +50,7 @@ const Index = () => {
                 <span className="text-portfolio-accent neon-text animate-pulse">Abdul-Salam</span>
               </h1>
               <p className="text-xl text-portfolio-gray-medium mb-8 max-w-md">
-                Creative developer specializing in building exceptional digital experiences 
+                Creative Data Scientist specializing in building exceptional digital experiences 
                 with a focus on clean design and efficient code.
               </p>
               <div className="flex space-x-4 mt-8">
