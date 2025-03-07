@@ -16,14 +16,15 @@ const ContactForm: React.FC = () => {
 
   // Initialize EmailJS once when component mounts
   useEffect(() => {
-    const serviceId = "service_portfolio"; // This should be replaced with your actual service ID
-    const templateId = "template_contact"; // This should be replaced with your actual template ID
-    const userId = "user_portfolio"; // This should be replaced with your actual user ID
+    // Public keys can be exposed in the client side code
+    emailjs.init("YOUR_USER_ID_HERE"); // Replace with your actual USER ID
     
-    // Store these values for the contact form instructions
+    const serviceId = "service_portfolio"; 
+    const templateId = "template_contact"; 
+    
+    // Store these values for the contact form
     localStorage.setItem('emailjs_service_id', serviceId || '');
     localStorage.setItem('emailjs_template_id', templateId || '');
-    localStorage.setItem('emailjs_user_id', userId || '');
     
     setEmailJSInitialized(true);
   }, []);
@@ -54,20 +55,19 @@ const ContactForm: React.FC = () => {
     
     setIsSubmitting(true);
     
-    // Get EmailJS credentials from localStorage (or you can set them directly if you have them)
+    // Get EmailJS credentials from localStorage
     const serviceId = localStorage.getItem('emailjs_service_id');
     const templateId = localStorage.getItem('emailjs_template_id');
-    const userId = localStorage.getItem('emailjs_user_id');
     
-    if (!serviceId || !templateId || !userId) {
-      toast.error('Email service not configured. Please set up EmailJS credentials.');
+    if (!serviceId || !templateId) {
+      toast.error('Email service not configured properly.');
       setIsSubmitting(false);
       
       // Show configuration instructions as a fallback
       toast(
         'EmailJS Setup Required',
         {
-          description: 'Sign up at emailjs.com and configure your service, template, and user ID.',
+          description: 'Sign up at emailjs.com, create a service and template, then update the ContactForm component.',
           duration: 8000,
         }
       );
@@ -82,12 +82,11 @@ const ContactForm: React.FC = () => {
     };
     
     try {
-      // Send the email using EmailJS
+      // Send the email using EmailJS with the new v3 syntax
       await emailjs.send(
         serviceId,
         templateId,
-        templateParams,
-        userId
+        templateParams
       );
       
       toast.success('Message sent successfully!');
@@ -181,7 +180,7 @@ const ContactForm: React.FC = () => {
         <p className="text-sm text-portfolio-gray-medium mt-4 p-3 bg-portfolio-card-bg/30 rounded-lg">
           <strong>Setup Note:</strong> To activate the contact form, create a free account at 
           <a href="https://www.emailjs.com/" target="_blank" rel="noopener noreferrer" className="text-portfolio-blue-light hover:text-portfolio-accent mx-1">EmailJS</a> 
-          and update the serviceId, templateId, and userId variables in this component.
+          and update the USER_ID value in this component.
         </p>
       )}
     </form>
