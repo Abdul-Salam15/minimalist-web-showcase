@@ -127,7 +127,7 @@ const ContactForm: React.FC = () => {
           type="text"
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg border border-portfolio-gray-light focus:border-portfolio-blue-medium focus:ring-1 focus:ring-portfolio-blue-medium outline-none transition-all"
+          className="w-full px-4 py-3 rounded-lg border border-portfolio-gray-light focus:border-portfolio-blue-medium focus:ring-1 focus:ring-portfolio-blue-medium outline-none transition-all text-black"
           placeholder="Your name"
         />
       </div>
@@ -142,7 +142,7 @@ const ContactForm: React.FC = () => {
           type="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg border border-portfolio-gray-light focus:border-portfolio-blue-medium focus:ring-1 focus:ring-portfolio-blue-medium outline-none transition-all"
+          className="w-full px-4 py-3 rounded-lg border border-portfolio-gray-light focus:border-portfolio-blue-medium focus:ring-1 focus:ring-portfolio-blue-medium outline-none transition-all text-black"
           placeholder="Your email address"
         />
       </div>
@@ -157,7 +157,7 @@ const ContactForm: React.FC = () => {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="w-full px-4 py-3 rounded-lg border border-portfolio-gray-light focus:border-portfolio-blue-medium focus:ring-1 focus:ring-portfolio-blue-medium outline-none transition-all resize-none"
+          className="w-full px-4 py-3 rounded-lg border border-portfolio-gray-light focus:border-portfolio-blue-medium focus:ring-1 focus:ring-portfolio-blue-medium outline-none transition-all resize-none text-black"
           placeholder="Your message"
         />
       </div>
