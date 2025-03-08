@@ -32,7 +32,7 @@ const socialLinks: SocialLink[] = [
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="flex space-x-4">
+    <div className="flex items-center justify-center space-x-4 w-full">
       {socialLinks.map((link) => (
         <a
           key={link.id}

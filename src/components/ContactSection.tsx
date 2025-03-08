@@ -16,7 +16,7 @@ const ContactSection: React.FC = () => {
         <h2 className="section-title text-white text-3xl sm:text-4xl">Get In Touch</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12 sm:mt-16">
-          <div className="lg:max-w-md text-center">
+          <div className="lg:max-w-md text-center mx-auto w-full">
             <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-white">Let's connect</h3>
             <p className="text-sm sm:text-base text-portfolio-gray-medium mb-6 sm:mb-8 max-w-md mx-auto">
               I'm currently available for freelance work and open to new opportunities. 
@@ -27,14 +27,14 @@ const ContactSection: React.FC = () => {
             <div className="space-y-5 sm:space-y-6">
               <div>
                 <h4 className="text-xs sm:text-sm uppercase tracking-wider text-portfolio-gray-medium mb-2 sm:mb-3">Email</h4>
-                <EmailButton email="asalamadebayo@gmail.com" />
+                <div className="flex justify-center">
+                  <EmailButton email="asalamadebayo@gmail.com" />
+                </div>
               </div>
               
               <div>
                 <h4 className="text-xs sm:text-sm uppercase tracking-wider text-portfolio-gray-medium mb-2 sm:mb-3">Social</h4>
-                <div className="flex justify-center">
-                  <SocialLinks />
-                </div>
+                <SocialLinks />
               </div>
             </div>
           </div>
