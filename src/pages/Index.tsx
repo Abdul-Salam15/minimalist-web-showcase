@@ -35,7 +35,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+      <section className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-10 w-60 h-60 rounded-full bg-portfolio-blue-medium blur-[100px]"></div>
           <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-portfolio-accent blur-[120px]"></div>
@@ -43,34 +43,34 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="order-2 lg:order-1 animate-fade-in text-center lg:text-left px-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-white">
                 Adebayo <br /> 
                 <span className="text-portfolio-accent neon-text animate-pulse">Abdul-Salam</span>
               </h1>
-              <p className="text-xl text-portfolio-gray-medium mb-8 max-w-md">
+              <p className="text-lg sm:text-xl text-portfolio-gray-medium mb-6 max-w-md mx-auto lg:mx-0">
                 Creative Data Scientist specializing in building exceptional digital experiences 
                 with a focus on clean design and efficient code.
               </p>
-              <div className="flex space-x-4 mt-8">
+              <div className="flex space-x-4 mt-6 justify-center lg:justify-start">
                 <a 
                   href="#projects" 
-                  className="neon-button"
+                  className="neon-button text-sm sm:text-base"
                 >
                   View Projects
                 </a>
                 <a 
                   href="#contact" 
-                  className="neon-button-alt"
+                  className="neon-button-alt text-sm sm:text-base"
                 >
                   Contact Me
                 </a>
               </div>
             </div>
             
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-              <div className="relative w-60 h-60 md:w-80 md:h-80 animate-scale-in">
+            <div className="order-1 lg:order-2 flex justify-center">
+              <div className="relative w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 animate-scale-in">
                 <div className="absolute inset-0 rounded-full bg-portfolio-blue-medium/20 neon-glow-blue overflow-hidden">
                   <img 
                     src="/lovable-uploads/66d67004-7453-420e-a4b6-d03de40b2591.png" 
@@ -98,7 +98,7 @@ const Index = () => {
       
       {/* Footer */}
       <footer className="bg-portfolio-card-bg py-8 border-t border-portfolio-neon-border/20">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-portfolio-gray-medium text-sm">
               © {new Date().getFullYear()} Adebayo Abdul-Salam. All rights reserved.
