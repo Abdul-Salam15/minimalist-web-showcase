@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -44,33 +43,33 @@ const Index = () => {
         
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="order-2 lg:order-1 animate-fade-in text-center lg:text-left px-4">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-white">
+            <div className="order-2 lg:order-1 animate-fade-in text-center px-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-white">
                 Adebayo <br /> 
                 <span className="text-portfolio-accent neon-text animate-pulse">Abdul-Salam</span>
               </h1>
-              <p className="text-lg sm:text-xl text-portfolio-gray-medium mb-6 max-w-md mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg text-portfolio-gray-medium mb-6 max-w-md mx-auto">
                 Creative Data Scientist specializing in building exceptional digital experiences 
                 with a focus on clean design and efficient code.
               </p>
-              <div className="flex space-x-4 mt-6 justify-center lg:justify-start">
+              <div className="flex space-x-4 mt-6 justify-center">
                 <a 
                   href="#projects" 
-                  className="neon-button text-sm sm:text-base"
+                  className="neon-button text-sm px-4 py-2 sm:px-6 sm:py-3 sm:text-base"
                 >
                   View Projects
                 </a>
                 <a 
                   href="#contact" 
-                  className="neon-button-alt text-sm sm:text-base"
+                  className="neon-button-alt text-sm px-4 py-2 sm:px-6 sm:py-3 sm:text-base"
                 >
                   Contact Me
                 </a>
               </div>
             </div>
             
-            <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 animate-scale-in">
+            <div className="order-1 lg:order-2 flex justify-center mb-8 lg:mb-0">
+              <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80 animate-scale-in">
                 <div className="absolute inset-0 rounded-full bg-portfolio-blue-medium/20 neon-glow-blue overflow-hidden">
                   <img 
                     src="/lovable-uploads/66d67004-7453-420e-a4b6-d03de40b2591.png" 

@@ -22,8 +22,8 @@ const Header: React.FC = () => {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 py-6 px-4 sm:px-8 z-50 transition-all duration-300 ease-in-out backdrop-blur-sm",
-        isScrolled ? "bg-portfolio-dark-bg/90 border-b border-portfolio-neon-border/20 py-4" : "bg-transparent"
+        "fixed top-0 left-0 right-0 py-4 sm:py-6 px-4 sm:px-8 z-50 transition-all duration-300 ease-in-out backdrop-blur-sm",
+        isScrolled ? "bg-portfolio-dark-bg/90 border-b border-portfolio-neon-border/20 py-3 sm:py-4" : "bg-transparent"
       )}
     >
       <div className="container mx-auto">
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           
           {/* Mobile navigation */}
           <div className="md:hidden flex items-center">
-            <div className="space-x-4">
+            <div className="space-x-6">
               <button 
                 onClick={() => scrollTo('projects', { offset: 80 })} 
                 className="nav-link text-portfolio-gray-dark text-sm"
