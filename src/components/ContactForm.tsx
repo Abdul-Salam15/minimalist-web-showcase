@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { toast } from 'sonner';
 import { Send } from 'lucide-react';
@@ -16,8 +15,9 @@ const ContactForm: React.FC = () => {
 
   // Initialize EmailJS once when component mounts
   useEffect(() => {
-    // Public keys can be exposed in the client side code
-    emailjs.init("YOUR_USER_ID_HERE"); // Replace with your actual USER ID
+    // EmailJS v3 just requires initialization with the public key
+    const publicKey = "YOUR_PUBLIC_KEY_HERE"; // Replace with your actual PUBLIC KEY
+    emailjs.init(publicKey);
     
     const serviceId = "service_portfolio"; 
     const templateId = "template_contact"; 
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
     };
     
     try {
-      // Send the email using EmailJS with the new v3 syntax
+      // Send the email using EmailJS with the correct v3 syntax
       await emailjs.send(
         serviceId,
         templateId,
@@ -180,7 +180,7 @@ const ContactForm: React.FC = () => {
         <p className="text-sm text-portfolio-gray-medium mt-4 p-3 bg-portfolio-card-bg/30 rounded-lg">
           <strong>Setup Note:</strong> To activate the contact form, create a free account at 
           <a href="https://www.emailjs.com/" target="_blank" rel="noopener noreferrer" className="text-portfolio-blue-light hover:text-portfolio-accent mx-1">EmailJS</a> 
-          and update the USER_ID value in this component.
+          and update the PUBLIC_KEY value in this component.
         </p>
       )}
     </form>
