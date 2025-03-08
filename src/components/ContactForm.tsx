@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { toast } from 'sonner';
 import { Send } from 'lucide-react';
@@ -16,11 +17,11 @@ const ContactForm: React.FC = () => {
   // Initialize EmailJS once when component mounts
   useEffect(() => {
     // EmailJS v3 just requires initialization with the public key
-    const publicKey = "YOUR_PUBLIC_KEY_HERE"; // Replace with your actual PUBLIC KEY
+    const publicKey = "q5384SZKOJ01z8lfY"; // User's actual PUBLIC KEY
     emailjs.init(publicKey);
     
-    const serviceId = "service_portfolio"; 
-    const templateId = "template_contact"; 
+    const serviceId = "service_669wewn"; 
+    const templateId = "template_x7p8jwd"; 
     
     // Store these values for the contact form
     localStorage.setItem('emailjs_service_id', serviceId || '');
