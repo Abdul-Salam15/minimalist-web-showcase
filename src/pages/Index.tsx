@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -107,16 +108,6 @@ const Index = () => {
                 GitHub: <a href="https://github.com/Abdul-Salam15" className="text-portfolio-blue-light hover:text-portfolio-accent transition-colors">@Abdul-Salam15</a>
               </p>
             </div>
-          </div>
-          
-          <div className="mt-8 pt-6 border-t border-portfolio-neon-border/20 text-center">
-            <p className="text-portfolio-gray-medium text-xs">
-              <strong>Deployment Guide:</strong> Deploy using{' '}
-              <a href="https://pages.github.com/" className="text-portfolio-blue-light hover:text-portfolio-accent transition-colors">GitHub Pages</a>{' '}
-              (push to gh-pages branch) or{' '}
-              <a href="https://www.netlify.com/" className="text-portfolio-blue-light hover:text-portfolio-accent transition-colors">Netlify</a>{' '}
-              (connect repository and set build command to "npm run build").
-            </p>
           </div>
         </div>
       </footer>
