@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           
           {/* Mobile navigation */}
           <div className="md:hidden flex items-center">
-            <div className="space-x-6">
+            <div className="flex items-center space-x-6">
               <button 
                 onClick={() => scrollTo('projects', { offset: 80 })} 
                 className="nav-link text-portfolio-gray-dark text-sm"
