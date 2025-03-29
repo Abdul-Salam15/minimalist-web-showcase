@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
+import { FileDown } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
@@ -29,6 +30,8 @@ const Index = () => {
       hiddenElements.forEach((el) => observer.unobserve(el));
     };
   }, []);
+
+  const resumeUrl = "https://drive.google.com/file/d/1ED36ZD0VUF6_6d0a3NnmS7du1PMUS4ui/view?usp=sharing";
 
   return (
     <>
@@ -65,6 +68,17 @@ const Index = () => {
                   className="neon-button-alt text-sm px-4 py-2 sm:px-6 sm:py-3 sm:text-base"
                 >
                   Contact Me
+                </a>
+              </div>
+              <div className="mt-4">
+                <a 
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-portfolio-accent hover:text-portfolio-blue-light transition-colors duration-300"
+                >
+                  <FileDown size={18} className="mr-2" />
+                  <span>Download Resume</span>
                 </a>
               </div>
             </div>

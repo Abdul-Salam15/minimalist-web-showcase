@@ -2,10 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import useScrollTo from '@/utils/useScrollTo';
+import { FileDown } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const scrollTo = useScrollTo();
+  
+  const resumeUrl = "https://drive.google.com/file/d/1ED36ZD0VUF6_6d0a3NnmS7du1PMUS4ui/view?usp=sharing";
   
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +55,17 @@ const Header: React.FC = () => {
                 Contact
               </button>
             </li>
+            <li>
+              <a 
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link text-portfolio-gray-dark flex items-center"
+              >
+                <FileDown size={16} className="mr-1" />
+                Resume
+              </a>
+            </li>
           </ul>
           
           {/* Mobile navigation */}
@@ -69,6 +83,15 @@ const Header: React.FC = () => {
               >
                 Contact
               </button>
+              <a 
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link text-portfolio-gray-dark text-sm flex items-center"
+              >
+                <FileDown size={14} className="mr-1" />
+                CV
+              </a>
             </div>
           </div>
         </nav>
